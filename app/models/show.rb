@@ -1,7 +1,6 @@
 class Show < ActiveRecord::Base
   has_many :characters
   belongs_to :network
-  has_one :genre
 
   def build_network(network)
     network = Network.new(network)
