@@ -8,6 +8,7 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     characters.all.each do |character|
+      "#{character.name} = #{character.show}"
     end
   end
 end
