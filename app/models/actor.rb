@@ -7,5 +7,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
+    characters.all.each do |character|
+    end
   end
 end
